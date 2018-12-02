@@ -1,0 +1,2 @@
+import {DIRECTION} from './Direction'
+

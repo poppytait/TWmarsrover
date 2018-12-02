@@ -1,0 +1,36 @@
+{
+  "name": "twtest",
+  "version": "1.0.0",
+  "description": "tw technical exam",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node --presets es2015 index.js",
+    "test": "babel-node spec/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poppytait/TWmarsrover.git"
+  },
+  "author": "poppy tait",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poppytait/TWmarsrover/issues"
+  },
+  "homepage": "https://github.com/poppytait/TWmarsrover#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jasmine": "^3.3.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
