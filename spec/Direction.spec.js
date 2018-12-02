@@ -1,4 +1,4 @@
-import {DIRECTION} from '../Direction';
+import {DIRECTION} from '../Mars Rover/Direction';
 
 describe("Direction", function() {
     it("should face W if it turns left at N", function() {

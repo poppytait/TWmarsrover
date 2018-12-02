@@ -1,4 +1,4 @@
-import Plateau from '../Plateau'
+import Plateau from '../Mars Rover/Plateau'
 
 describe("Plateau", function() {
     
