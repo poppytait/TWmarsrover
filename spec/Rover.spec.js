@@ -7,43 +7,30 @@ describe("Rover", function() {
     it("should return correction position when moved", function() {
         const rover = new Rover(plateau, DIRECTION.N, 0, 0)
         
-        rover.executeCommand('M');
+        rover.executeCommands(['M', 'R', 'M']);
 
-        expect(rover.x).toBe(0);
+        expect(rover.x).toBe(1);
         expect(rover.y).toBe(1);
     });
 
     it("should return correction position when moved", function() {
         const rover = new Rover(plateau, DIRECTION.N, 2, 2)
         
-        rover.executeCommand('L');
+        rover.executeCommands(['L', 'L', 'M', 'M']);
 
-        expect(rover.direction).toBe(DIRECTION.W);
+        expect(rover.x).toBe(2);
+        expect(rover.y).toBe(0);
     });
 
     it("should return correction position when moved", function() {
-        const rover = new Rover(plateau, DIRECTION.N, 4, 5)
+        const rover = new Rover(plateau, DIRECTION.S, 5, 5)
         
-        rover.executeCommand('R');
+        rover.executeCommands(['M', 'M', 'R', 'R', 'M', 'L']);
 
-        expect(rover.direction).toBe(DIRECTION.E);
+        expect(rover.x).toBe(5);
+        expect(rover.y).toBe(4);
     });
 
-    it("should return correction position when moved", function() {
-     
-        const rover = new Rover(plateau, DIRECTION.E, 1, 5)
-        
-        rover.executeCommand('R');
 
-        expect(rover.direction).toBe(DIRECTION.S);
-    });
-
-    it("should return correction position when moved", function() {
-        const rover = new Rover(plateau, DIRECTION.W, 4, 2)
-        
-        rover.executeCommand('R');
-
-        expect(rover.direction).toBe(DIRECTION.N);
-    });
 
 });

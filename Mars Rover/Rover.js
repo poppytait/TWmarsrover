@@ -8,6 +8,12 @@ export default class Rover {
         this.y = y
     }
 
+    executeCommands(commands) {
+        commands.forEach((command) => {
+            this.executeCommand(command);
+        })
+    }
+
     executeCommand(command) {
         switch (command) {
             case 'M': 
